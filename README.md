@@ -2,6 +2,9 @@
 
 A Next.js application that scrapes popular news sites, analyzes their sentiment, and allows users to filter news by positive, negative, or mixed sentiments.
 
+![image](https://github.com/user-attachments/assets/326411d4-baf9-4d7d-895b-d3305f2c7eec)
+
+
 ## Features
 
 - Modern UI with blue-white color palette using TailwindCSS
