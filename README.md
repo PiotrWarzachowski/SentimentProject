@@ -4,6 +4,7 @@ A Next.js application that scrapes popular news sites, analyzes their sentiment,
 
 ![image](https://github.com/user-attachments/assets/326411d4-baf9-4d7d-895b-d3305f2c7eec)
 
+![image](https://github.com/user-attachments/assets/f373cf35-70a3-43f6-be41-1b2939db309e)
 
 ## Features
 
