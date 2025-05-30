@@ -28,10 +28,10 @@ const newsSites = [
     },
     {
         name: 'BBC',
-        url: 'https://www.bbc.com',
+        url: 'https://www.bbc.com/news',
         selectors: {
-            articles: 'article, [role="article"], .gs-c-promo-body',
-            title: 'h1, h2, h3',
+            articles: '[data-indexcard="true"]', 
+            title:  'h2',
             link: 'a',
         },
     },
@@ -39,8 +39,8 @@ const newsSites = [
         name: 'The Guardian',
         url: 'https://www.theguardian.com/international',
         selectors: {
-            articles: '.fc-item',
-            title: '.fc-item__title',
+            articles: 'li',
+            title: 'span',
             link: 'a',
         },
     },
@@ -88,7 +88,7 @@ async function scrapeNewsSite(site: typeof newsSites[0]): Promise<ArticlePreview
                 source: site.name,
             });
         });
-        console.log(site.name, articles.length);
+        console.log(site.name, articles.length, '\n');
 
         return articles;
     } catch (error) {
