@@ -89,7 +89,6 @@ async function scrapeNewsSite(site: typeof newsSites[0]): Promise<ArticlePreview
             });
         });
         console.log(site.name, articles.length, '\n');
-
         return articles;
     } catch (error) {
         console.error(`Error scraping ${site.name}:`, error);
